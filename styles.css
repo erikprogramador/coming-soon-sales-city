@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  --font: 'Nunito', sans-serif;
+  --white: #ffffff;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--white);
+  background: url('images/bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+img {
+  margin-bottom: 2.5rem;
+  transition: transform 200ms ease-in-out;
+  transform: translateY(0);
+}
+
+img:hover {
+  transform: translateY(-5%);
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+p {
+  font-weight: 400;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+}
